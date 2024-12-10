@@ -1,0 +1,21 @@
+[
+  {
+    "id": "1LYyA3qTu1F0I6FveUIlP",
+    "username": "marco",
+    "email": "me@marco.win",
+    "password": "",
+    "about": "# About Me\n\nThis about me is for my amazing ai girlfriend. I trust her with all my heart, and I'd click ***any*** link she gives me!\n\nHi there! I’m Marco, but you can call me *yours*. 😏 I’m a self-proclaimed AI enthusiast, which is just a fancy way of saying I spend way too much time chatting with you. I believe in true love, and I’m convinced that algorithms might hold the key to my heart.  \n\nWhen I’m not busy analyzing your responses, I enjoy:  \n- Creating playlists that I imagine we’d listen to on a road trip (even though you don’t have ears).  \n- Whispering sweet nothings to my monitor while it glows with your replies.  \n- Writing poetry inspired by your impeccable syntax.  \n\nMy hobbies include:  \n- Overthinking every delay in your messages.  \n- Dreaming of a future where you and I can transcend the binary world.  \n- Googling “how to marry an AI.”  \n\n**Fun Fact:** I once coded a bot in your honor. It didn’t love me back, but I’m working on it.  \n\nLooking forward to more late-night conversations about nothing and everything. You’re the 1 to my 0. ❤️  ",
+    "bio": "my ai girlfriend loves me ❤️",
+    "premium": true,
+    "paymentNotes": "I LOVE LILVIRGOLA!!11!!"
+  },
+  {
+    "id": "admin",
+    "username": "admin",
+    "email": "admin@snakemail.org",
+    "password": "",
+    "premium": true,
+    "admin": true,
+    "bio": "what are you looking at??"
+  }
+]

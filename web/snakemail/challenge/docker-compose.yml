@@ -1,0 +1,36 @@
+---
+services:
+  # chiamata così per questo:
+  # https://github.com/puppeteer/puppeteer/issues/5622#issuecomment-1042921429
+  next-app:
+    build: next-app
+    restart: unless-stopped
+    read_only: true
+    ports:
+      - 3000:3000
+    volumes:
+      - type: tmpfs
+        target: /tmp
+    environment:
+      NODE_ENV: production
+      REPORT_BOT_URL: http://bot:3001/visit
+      JWT_SECRET: FCLckdFbhwqzaSZR4guQrVTX3ZykL9wFaCScNrj4ZvspWn3FM92Csu3ugZLgavfEsucaaJjqXqCa82WnMgfEDGg9j5RURu4ZKxvkrYvmARfdadEAs38XewrVmdFENAMrXvxn7RNkFvda6SCtsbJD9jsZCAuT2pyG
+  bot:
+    build: bot
+    restart: unless-stopped
+    read_only: true
+    ports:
+      - 3001:3001
+    volumes:
+      - type: tmpfs
+        target: /tmp
+      - type: tmpfs
+        target: /root/.config
+    environment:
+      NODE_ENV: production
+      # PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+      # CHROMIUM_PATH: "/usr/bin/chromium-browser"
+      PORT: 3001
+      SHOW_LOGS: 1
+      JWT_SECRET: FCLckdFbhwqzaSZR4guQrVTX3ZykL9wFaCScNrj4ZvspWn3FM92Csu3ugZLgavfEsucaaJjqXqCa82WnMgfEDGg9j5RURu4ZKxvkrYvmARfdadEAs38XewrVmdFENAMrXvxn7RNkFvda6SCtsbJD9jsZCAuT2pyG
+      SITE_BASEURL: http://next-app:3000

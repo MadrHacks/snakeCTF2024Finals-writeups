@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html,
+  .font-inter {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  @apply bg-white/5;
+}
+body::-webkit-scrollbar-thumb {
+  @apply bg-white/10;
+}
+
+.other-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-white/20;
+}
+.other-scrollbar::-webkit-scrollbar-track {
+  @apply bg-white/10;
+}
+
+.scrollbar-tr-rounded::-webkit-scrollbar-track {
+  @apply rounded-tr-md;
+}
+.scrollbar-tr-rounded::-webkit-scrollbar-thumb {
+  @apply rounded-tr-md;
+}
+.scrollbar-br-rounded::-webkit-scrollbar-track {
+  @apply rounded-br-md;
+}
+.scrollbar-br-rounded::-webkit-scrollbar-thumb {
+  @apply rounded-br-md;
+}
+
+::selection {
+  @apply text-white bg-primary;
+}
+
+::moz-selection {
+  @apply text-white bg-primary;
+}
+
+#__next {
+  @apply min-h-screen flex flex-col;
+}
+
+body {
+  @apply bg-black text-white;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.hero-image {
+  mask-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

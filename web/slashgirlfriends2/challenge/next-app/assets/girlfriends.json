@@ -1,0 +1,30 @@
+[
+  {
+    "id": "bepi-frico",
+    "name": "Bepi Frico (aka snek)",
+    "premium": false,
+    "image": "/bepi.webp",
+    "description": "loves python"
+  },
+  {
+    "id": "elius",
+    "name": "Elius",
+    "premium": true,
+    "image": "/chrome_0V3Myjhv4M.png",
+    "description": "also likes numbers"
+  },
+  {
+    "id": "cucalampa",
+    "name": "cucalampa",
+    "premium": true,
+    "image": "/chrome_MdwEsTOFk5.png",
+    "description": "likes numbers"
+  },
+  {
+    "id": "lilvirgola",
+    "name": "lilvirgola",
+    "premium": true,
+    "image": "/f383e5256f3436b8993d4add39d85849.png",
+    "description": "likes weird strings"
+  }
+]
