@@ -15,7 +15,7 @@ As shown in the image, two tapping tools must be created using a piece of Ethern
 
 ### Tapping into the network
 Using the tools created earlier, the ethernet cable can be tapped without breaking any wires or interrupting the connection, as shown.
-![image](./images/wirering.jpg)
+![image](./images/wiring.jpg)
 
 ### Capturing the Traffic
 The Ethernet interface must be utilised to sniff and capture the traffic on the cable. If the packets contain only the response from the server, it can be concluded that the wrong pair of wires in the cable has been connected.
