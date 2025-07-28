@@ -2,20 +2,14 @@
 
 **Category**: Network
 
----
-
 ## Description  
 
 We were sniffing some traffic on an academic network and we found something unusual. \
 Could you help us?
 
----
-
 ## Solution  
 
 The solution can be divided into multiple steps, as outlined below.
-
----
 
 ### First Step  
 
@@ -27,8 +21,6 @@ Using the filter tcp.port == 1337, packets relevant to the challenge can be isol
 
 SYN-ACK packets from the server should be examined to extract sequence numbers (seq). Following these, ACK packets from the client should be inspected for anomalies in their acknowledgment numbers.
 
----
-
 ### Second Step  
 
 The manipulation must be understood by comparing the server’s sequence number and the client’s acknowledgment number. During a standard handshake:  
@@ -38,8 +30,6 @@ In this challenge, the client deliberately modifies its ACK numbers:
 $$\text{diff} = \text{actual\\_ack} - \text{expected\\_ack}$$
 
 Each diff value corresponds to the ASCII value of a character. Only printable characters are valid.
-
----
 
 ### Third Step  
 
