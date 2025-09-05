@@ -1,6 +1,7 @@
 # Sold [_snakeCTF 2024 Finals_]
 
 **Category**: web
+**Author**: peszr
 
 ## Description
 

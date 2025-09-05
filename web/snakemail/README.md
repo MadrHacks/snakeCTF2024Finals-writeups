@@ -1,6 +1,7 @@
 # Snakemail [_snakeCTF 2024 Finals_]
 
 **Category**: Web
+**Author**: macedonga
 
 ## Description
 

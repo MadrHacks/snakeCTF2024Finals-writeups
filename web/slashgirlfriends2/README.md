@@ -1,6 +1,7 @@
 # SlashGirlfriends 2 [_snakeCTF 2024 Finals_]
 
 **Category**: Web
+**Author**: macedonga
 
 ## Description
 Some people just couldn't get enough of SlashGirlfriends, that's why we're back for round 2.
