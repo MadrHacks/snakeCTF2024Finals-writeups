@@ -1,6 +1,7 @@
 # attack-on-infra [_snakeCTF 2024 Finals_]
 
-**Category**: network
+**Category**: network\
+**Author**: jotone
 
 ## Description
 
